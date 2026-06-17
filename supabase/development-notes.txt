@@ -1,0 +1,20 @@
+Zenverse Supabase — local development
+---------------------------------------
+To avoid signup/email rate limits during development:
+
+1. Supabase Dashboard → Authentication → Providers → Email
+   - Disable "Confirm email" so signup returns an immediate session instead of blocking on verification.
+
+This is a Dashboard setting only; it cannot be changed from the Flutter app.
+
+Friends / friend code search
+----------------------------
+If searching a friend code returns "No user found" even when the code is correct:
+
+1. Supabase Dashboard → SQL Editor → run the full contents of supabase/zenverse_schema.sql
+   (adds find_profile_by_user_code RPC + RLS policies for profiles and friendships).
+
+2. Each user must open the app while logged in once so their profile syncs to Supabase
+   (Settings shows the code from local cache; Friends screen publishes it to the server).
+
+3. Search using the OTHER person's code — not your own.

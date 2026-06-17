@@ -1,0 +1,29 @@
+class AppRoutes {
+  static const splash = '/';
+  static const onboarding1 = '/onboarding-1';
+  static const onboarding2 = '/onboarding-2';
+  static const permissionOnboarding = '/permission-onboarding';
+  static const login = '/login';
+  static const register = '/register';
+  static const forgotPassword = '/forgot-password';
+  static const otpVerification = '/otp-verification';
+  static const resetPassword = '/reset-password';
+  static const shell = '/shell';
+  static const streak = '/streak';
+  static const journeySetup = '/journey-setup';
+  static const appPermissionPicker = '/app-permission-picker';
+  static const galaxyPicker = '/galaxy-picker';
+  static const sessionFriendsPicker = '/session-friends-picker';
+  static const activeSession = '/active-session';
+  static const sessionComplete = '/session-complete';
+  static const shareVictory = '/share-victory';
+  static const scheduleReminder = '/schedule-reminder';
+  static const friends = '/friends';
+  static const directChat = '/direct-chat';
+  static const planetGameSelection = '/planet-game-selection';
+  static const game2048 = '/game-2048';
+  static const orbitPuzzle = '/orbit-puzzle';
+  static const planetDetail = '/planet-detail';
+  static const editProfile = '/edit-profile';
+  static const profileOnboarding = '/profile-onboarding';
+}
